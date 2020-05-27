@@ -22,6 +22,34 @@ $ npm install -g gitbook-cli
 $ npm install -g gitbook-cli
 ```
 
+## How to install from a GitHub fork
+`npm root -g` to discover where `npm install -g` installs its packages onto the file system.  For example
+
+```
+/home/practicalli/.apps/nodejs/node-v12.16.0-linux-x64/lib/node_modules
+```
+
+Change to the npm install directory, for example
+
+```
+cd /home/practicalli/.apps/nodejs/node-v12.16.0-linux-x64/lib/node_modules
+```
+
+clone the forked copy, for example
+
+```
+git clone https://github.com/jr0cket/gitbook-cli.git
+```
+
+Change into the directory of the cloned repository and run the npm install
+
+```
+cd gitbook-cli && npm install
+```
+
+Now you are ready to use the `gitbook` commands
+
+
 ## How to use it?
 
 ### Run GitBook
